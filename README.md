@@ -5,8 +5,7 @@
 
 ## 구성 요소 설명
 
-- **Genie One :** ChatGPT나 Gemini Web App과 유사한 방식의 Databricks의 자연어 채팅 서비스 입니다. 질문을 받으면 다음 순서로 검색합니다. (1) 기존 **Genie Agents**, (2)
-  dashboards/queries/metric views — 그리고 **Genie Ontology**를 활용하여 답변합니다.
+- **Genie One** 은 ChatGPT 나 Gemini Web App과 유사한 방식의 Databricks의 자연어 채팅 서비스 입니다. 질문을 받으면 다음 순서로 검색합니다. (1) 기존 **Genie Agents**, (2) dashboards/queries/metric views — 그리고 **Genie Ontology**를 활용하여 답변합니다.
   - *모델링된 컨텍스트* — metric views, domains, pages — 사람이 선별하고
     인증한 항목 (이 데모에서 구축하는 부분).
   - *추론된 컨텍스트* — 메타데이터, 사용량, 최신성 — 기존 자산에서 자동으로

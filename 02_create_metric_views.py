@@ -10,7 +10,7 @@
 # MAGIC
 # MAGIC | 메트릭 뷰 | 팩트 원본 | 조인된 차원 |
 # MAGIC |---|---|---|
-# MAGIC | `mv_판매_실적` | `fact_sales` | `dim_date`, `dim_product`, `dim_customer`, `dim_store` |
+# MAGIC | `mv_sales_performance` | `fact_sales` | `dim_date`, `dim_product`, `dim_customer`, `dim_store` |
 # MAGIC | `mv_customer_returns` | `fact_returns` | `dim_date`, `dim_product`, `dim_customer` |
 # MAGIC | `mv_inventory_health` | `fact_inventory` | `dim_date`, `dim_product`, `dim_store` |
 # MAGIC

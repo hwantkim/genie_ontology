@@ -1,13 +1,12 @@
 # Genie 온톨로지 - Genie One 답변의 신뢰성 향상
+이 리포지토리는 소규모 스타 스키마 형태의 리테일 데이터셋을 바탕으로, Genie 온톨로지(Unity Catalog 시맨틱: 메트릭 뷰, 도메인, 페이지, 인증)를 모델링하여 적용해 보고, 최종적으로 Databricks Genie One에서 실습 중심 데모를 진행하는데 사용되는 노트북들로 이루어져 있습니다.
 
-소규모 스타 스키마 형태의 리테일 데이터셋을 바탕으로, 수작업으로 모델링된 Genie 온톨로지(Unity Catalog 시맨틱: 메트릭 뷰, 도메인, 페이지, 인증)를 적용한 Databricks Genie One의 실습용 데모입니다.
-
-이 노트북들은 독립형 "Northwind Retail" 매출 및 고객 분석 유스케이스를 구축한 뒤, Genie One을 해당 데이터셋에 연동하여 인증된 메트릭 뷰, 도메인, 페이지가 Genie 답변의 품질과 추적 가능성을 어떻게 변화시키는지 질문별로 직접 확인할 수 있도록 안내합니다.
+이를 통하여 여러분은 독립형 "Northwind Retail" 매출 및 고객 분석 유스케이스를 구축한 뒤, Genie One을 해당 데이터셋에 연동하여 인증된 메트릭 뷰, 도메인, 페이지를 사용하여 Genie 답변의 품질과 추적 가능성을 어떻게 변화시키는지 질문별로 직접 확인할 수 있을 것입니다.
 
 ## 구성 요소 설명
 
-- **Genie One**은 Databricks의 전체 화면 자연어 채팅 기능입니다. 질문을 받으면 다음 순서로 검색합니다. (1) 기존 **Genie Agents**, (2)
-  dashboards/queries/metric views — 그리고 **Genie Ontology**를 활용하여 답변합니다:
+- **Genie One :** ChatGPT나 Gemini Web App과 유사한 방식의 Databricks의 자연어 채팅 서비스 입니다. 질문을 받으면 다음 순서로 검색합니다. (1) 기존 **Genie Agents**, (2)
+  dashboards/queries/metric views — 그리고 **Genie Ontology**를 활용하여 답변합니다.
   - *모델링된 컨텍스트* — metric views, domains, pages — 사람이 선별하고
     인증한 항목 (이 데모에서 구축하는 부분).
   - *추론된 컨텍스트* — 메타데이터, 사용량, 최신성 — 기존 자산에서 자동으로

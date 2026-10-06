@@ -181,4 +181,4 @@ SQL DDL로 표현할 수 있는 것은 스크립트화할 수 있으며, Catalog
 
 
 > 내용을 zip으로 다운 받으신 후, 데이터브릭스 워크스페이스에서 import 하여 살펴보세요!
-> 데모의 경우 Databricks Free Edition에서 실행 가능하도록 코드를 정리하여 제공합니다.
+> 데모의 경우 Databricks Free Edition에서 실행 가능하도록 코드를 조정하여 작성하였습니다.

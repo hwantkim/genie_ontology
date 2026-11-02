@@ -16,7 +16,7 @@
 # MAGIC
 # MAGIC 각 차원(Dimension)과 측정값(Measure)은 Genie One의 모델링 컨텍스트 레이어가 읽어들이는 "에이전트 메타데이터"를 포함합니다: `display_name`, `description`, `synonyms`, 그리고 (숫자 측정값의 경우) 통화나 백분율 같은 `format` 힌트입니다.
 # MAGIC
-# MAGIC **정확성에 대 참고:** `display_name` / `description` / `synonyms`는 안정적이며 문서화된 메트릭 뷰 메타데이터 필드입니다. `format` 블록의 정확한 키는 Databricks 릴리스별로 변경된 바 있습니다 - `CREATE VIEW`가 `format:` 라인에서 실패할 경우, 해당 라인을 삭제한 후 재실행하고, 이후 Catalog Explorer의 메트릭 뷰 YAML 에디터에서 포맷을 추가하세요 (현재 워크스페이스의 스키마 버전에 맞춘 자동완성/검증 기능을 제공합니다).
+# MAGIC **참고:** `display_name` / `description` / `synonyms`는 안정적이며 문서화된 메트릭 뷰 메타데이터 필드입니다. `format` 블록의 정확한 키는 Databricks 릴리스별로 변경된 바 있습니다 - `CREATE VIEW`가 `format:` 라인에서 실패할 경우, 해당 라인을 삭제한 후 재실행하고, 이후 Catalog Explorer의 메트릭 뷰 YAML 에디터에서 포맷을 추가하세요 (현재 워크스페이스의 스키마 버전에 맞춘 자동완성/검증 기능을 제공합니다).
 # MAGIC
 # MAGIC 교차 팩트(Cross-fact) 메트릭(예: "반품률" = 반품 / 매출)은 여기서 **의도적으로** 측정값으로 정의하지 않았습니다 - 메트릭 뷰의 측정값은 자체 소스와 조인된 차원만 집계할 수 있으며, 다른 팩트 테이블은 집계할 수 없습니다. 그럼에도 Genie One은 `mv_sales_performance`와 `mv_customer_returns`를 모두 조회하고 결합하여 "우리의 반품률은 어떻게 되나요"와 같은 교차 메트릭 뷰 질문에 답할 수 있습니다; "총 수익" 및 "고객 반품률" 페이지(`05_pages_content` 참조)에서 해당 공식을 명시적으로 문서화하여 Genie가 인용할 수 있는 신뢰할 수 있는 정의를 제공합니다.
 
